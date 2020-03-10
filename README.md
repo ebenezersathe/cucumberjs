@@ -1,2 +1,1 @@
-# cucumberjs
-Cucumberjs and nodejs with puppeteer
+# cucumberjs-puppeteer
