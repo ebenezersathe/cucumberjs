@@ -1,0 +1,25 @@
+{
+  "name": "cucumberjs-puppeteer",
+  "version": "1.0.0",
+  "description": "Base project to set up Cucumber Framework with Puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "start": "cucumber-js -f json:./reports/cucumber_report.json --tags @pacAdmin && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KSitjar/cucumberjs-puppeteer.git"
+  },
+  "author": "Kenneth Sitjar",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/KSitjar/cucumberjs-puppeteer/issues"
+  },
+  "homepage": "https://github.com/KSitjar/cucumberjs-puppeteer#readme",
+  "dependencies": {
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^5.0.2",
+    "dotenv": "^8.1.0",
+    "puppeteer-core": "^2.1.1"
+  }
+}
