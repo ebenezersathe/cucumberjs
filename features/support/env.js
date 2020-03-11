@@ -1,6 +1,8 @@
-const { setWorldConstructor } = require('cucumber');
+const { setWorldConstructor, setDefaultTimeout } = require('cucumber');
 const puppeteer = require("puppeteer-core");
 const dotenv = require('dotenv').config();
+
+setDefaultTimeout(60 * 1000);
 
 // CONFIGURING BROWSER
 const browserConfig = require('./browserConfig.json');
