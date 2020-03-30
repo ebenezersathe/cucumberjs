@@ -16,11 +16,13 @@ When('I enter {string} in the search bar', async function (keyword) {
 });
 
 When('Click Submit', async function () {
-    await this.page.waitFor(500);
+    await this.page.waitFor(5000);
     await this.page.click(searchBtn);
 });
 
 Then('Search results page is displayed for {string}', async function (keyword) {
+    await this.page.waitFor(5000);
+
     await this.page.waitForSelector(resultEnd);
 
     let getElementText = await this.page.evaluate(() => document.querySelector("[data-attrid=title]").innerText);
