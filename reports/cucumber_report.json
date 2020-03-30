@@ -1,0 +1,107 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Google.com Search Function",
+    "line": 2,
+    "id": "google.com-search-function",
+    "tags": [
+      {
+        "name": "@pacAdmin",
+        "line": 1
+      }
+    ],
+    "uri": "features/feature_files/gSearch.feature",
+    "elements": [
+      {
+        "id": "google.com-search-function;enter-a-keyword-and-search",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Enter a keyword and search",
+        "tags": [
+          {
+            "name": "@pacAdmin",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/support/hooks.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3058000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on \"https://www.google.com\"",
+            "match": {
+              "location": "features/step-definitions/gSearch-stepDef.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2210000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I enter \"giraffs\" in the search bar",
+            "match": {
+              "location": "features/step-definitions/gSearch-stepDef.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1864000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Click Submit",
+            "match": {
+              "location": "features/step-definitions/gSearch-stepDef.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5814000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Search results page is displayed for \"giraffs\"",
+            "match": {
+              "location": "features/step-definitions/gSearch-stepDef.js:23"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5676000000,
+              "error_message": "AssertionError [ERR_ASSERTION]: Keyword does not match title\n    + expected - actual\n\n    -giraffes\n    +giraffs\n\n    at world.<anonymous> (/Users/ebenezersathe/Documents/EbeProjects/cucumberjs/features/step-definitions/gSearch-stepDef.js:33:12)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features/support/hooks.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 180000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
